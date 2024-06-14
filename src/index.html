@@ -1,29 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
-    <link rel="shortcut icon" href="./4geeks.ico" />
+    <title>Generador de Cartas Aleatorias</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <div
+      class="container text-center mt-5 d-flex flex-column align-items-center"
+    >
+      <div id="card-container" class="card mx-auto shadow-lg">
+        <div class="card-body position-relative">
+          <div class="card-corner top-left">
+            <div class="corner-value">A</div>
+            <div class="corner-suit">♠</div>
+          </div>
+          <div class="card-center">
+            <div class="center-value">A</div>
+          </div>
+          <div class="card-corner bottom-right">
+            <div class="corner-value">A</div>
+            <div class="corner-suit">♠</div>
+          </div>
+        </div>
       </div>
+      <button
+        id="new-card-btn"
+        class="btn btn-primary btn-lg mt-3 rounded-pill shadow-sm"
+      >
+        Generar Nueva Carta
+      </button>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>
